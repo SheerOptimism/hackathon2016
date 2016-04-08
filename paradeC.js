@@ -5,7 +5,7 @@ var routeCrestroomURL = "https://www.dropbox.com/s/b42kfpny9xccfgc/RouteCRestroo
 var routeCvendorURL = "https://www.dropbox.com/s/74zbcbko10q4qsi/RouteCVendors.kml?dl=1";
 var routeCstreetURL = "https://www.dropbox.com/s/g32cmvtdyyatxl7/RouteCStreetClosures.kml?dl=0";
 
-myMap.addLayer(routeCparadeUrl,false);
+myMap.addLayer(routeCparadeUrl,true);
 myMap.addLayer(routeCrestroomURL,false);
 myMap.addLayer(routeCvendorURL,false);
 myMap.addLayer(routeCstreetURL,false);
