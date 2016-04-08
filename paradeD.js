@@ -20,18 +20,53 @@ var showStreetBtn = document.getElementById ("showStreetBtn");
 var hideStreetBtn = document.getElementById ("hideStreetBtn");
 
 function showRouteOnClickHandler(){
-  myMap.showLayer(routeDparadeUrl);
-  myMap.showLayer(routeDrestroomURL);
-  myMap.showLayer(routeDvendorURL);
-  myMap.showLayer(routeDstreetURL);
+	myMap.showLayer(routeDparadeUrl);
   };
   
-function hideRouteOnClickHandler(){
-  myMap.hideLayer(routeDparadeUrl);
-  myMap.hideLayer(routeDrestroomURL);
-  myMap.hideLayer(routeDvendorURL);
-  myMap.hideLayer(routeDstreetURL);
+  function hideRouteOnClickHandler(){
+ myMap.hideLayer(routeDparadeUrl);
   };
+  
+  
+function showRestroomOnClickHandler()
+{
+  myMap.showLayer(routeDrestroomURL);
+}
+
+function hideRestroomOnClickHandler()
+{
+  myMap.hideLayer(routeDrestroomURL);
+}
+
+
+function showVendorOnClickHandler()
+{
+  myMap.showLayer(routeDvendorURL);
+}
+
+function hideVendorOnClickHandler()
+{
+  myMap.hideLayer(routeDvendorURL);
+}
+
+function showStreetOnClickHandler()
+{
+  myMap.showLayer(routeDstreetURL);
+}
+
+function hideStreetOnClickHandler()
+{
+  myMap.hideLayer(routeDstreetURL);
+}
   
 showRouteBtn.onclick = showRouteOnClickHandler;
 hideRouteBtn.addEventListener("click", hideRouteOnClickHandler)
+
+showClosestRestroomBtn.onclick = showRestroomOnClickHandler;
+hideClosestRestroomBtn.addEventListener("click", hideRestroomOnClickHandler)
+
+showFoodVendorBtn.onclick = showVendorOnClickHandler;
+hideFoodVendorBtn.addEventListener("click", hideVendorOnClickHandler)
+
+showStreetBtn.onclick = showStreetOnClickHandler;
+hideStreetBtn.addEventListener("click", hideStreetOnClickHandler)
