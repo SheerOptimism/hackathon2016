@@ -1,14 +1,14 @@
 myMap = createParadeMap("map");
 
 var routeAparadeUrl = "https://www.dropbox.com/s/w9m0lv99p5i4fhv/RouteAParadeRoute.kml?dl=1";
-var routeArestroomURL = "https://www.dropbox.com/s/xr28jnpg0wzfdl8/RouteARestrooms.kml?dl=1";
-var routeAvendorURL = "https://www.dropbox.com/s/xr28jnpg0wzfdl8/RouteARestrooms.kml?dl=1";
-var routeAstreetURL = "https://www.dropbox.com/s/dtbpxkchagxox5m/RouteAStreetClosures.kml?dl=1"
+var routeArestroomUrl = "https://www.dropbox.com/s/xr28jnpg0wzfdl8/RouteARestrooms.kml?dl=1";
+var routeAvendorUrl = "https://www.dropbox.com/s/iv5j0m6rgi8xq5s/RouteAVendors.kml?dl=1";
+var routeAstreetUrl = "https://www.dropbox.com/s/dtbpxkchagxox5m/RouteAStreetClosures.kml?dl=1"
 
 myMap.addLayer(routeAparadeUrl,true);
-myMap.addLayer(routeArestroomURL, false);
-myMap.addLayer(routeAvendorURL, false);
-myMap.addLayer(routeAstreetURL, false);
+myMap.addLayer(routeArestroomUrl, false);
+myMap.addLayer(routeAvendorUrl, false);
+myMap.addLayer(routeAstreetUrl, false);
 
 var showRouteBtn = document.getElementById("showRouteBtn");
 var hideRouteBtn = document.getElementById("hideRouteBtn");
@@ -30,33 +30,33 @@ function showRouteOnClickHandler(){
   
 function showRestroomOnClickHandler()
 {
-  myMap.showLayer(routeArestroomURL);
+  myMap.showLayer(routeArestroomUrl);
 }
 
 function hideRestroomOnClickHandler()
 {
-  myMap.hideLayer(routeArestroomURL);
+  myMap.hideLayer(routeArestroomUrl);
 }
 
 
 function showVendorOnClickHandler()
 {
-  myMap.showLayer(routeAvendorURL);
+  myMap.showLayer(routeAvendorUrl);
 }
 
 function hideVendorOnClickHandler()
 {
-  myMap.hideLayer(routeAvendorURL);
+  myMap.hideLayer(routeAvendorUrl);
 }
 
 function showStreetOnClickHandler()
 {
-  myMap.showLayer(routeAstreetURL);
+  myMap.showLayer(routeAstreetUrl);
 }
 
 function hideStreetOnClickHandler()
 {
-  myMap.hideLayer(routeAstreetURL);
+  myMap.hideLayer(routeAstreetUrl);
 }
   
   

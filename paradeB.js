@@ -1,9 +1,9 @@
 myMap = createParadeMap("map");
 
 var routeBparadeUrl = "https://www.dropbox.com/s/rz0vlyur05n8v2u/RouteBParadeRoute.kml?dl=1";
-var routeBrestroomURL = "https://www.dropbox.com/s/vakxapjzixe0r6f/RouteBRestrooms.kml?dl=1";
-var routeBvendorURL = "https://www.dropbox.com/s/l6z9cu5a3b23hsj/RouteBVendors.kml?dl=1";
-var routeBstreetURL = "https://www.dropbox.com/s/4j4iqj3m1f9dmgb/RouteBStreetClosures.kml?dl=1"
+var routeBrestroomUrl = "https://www.dropbox.com/s/vakxapjzixe0r6f/RouteBRestrooms.kml?dl=1";
+var routeBvendorUrl = "https://www.dropbox.com/s/l6z9cu5a3b23hsj/RouteBVendors.kml?dl=1";
+var routeBstreetUrl = "https://www.dropbox.com/s/4j4iqj3m1f9dmgb/RouteBStreetClosures.kml?dl=1"
 
 myMap.addLayer(routeBparadeUrl,true);
 myMap.addLayer(routeBrestroomUrl,false);
@@ -30,33 +30,33 @@ function showRouteOnClickHandler(){
   
 function showRestroomOnClickHandler()
 {
-  myMap.showLayer(routeBrestroomURL);
+  myMap.showLayer(routeBrestroomUrl);
 }
 
 function hideRestroomOnClickHandler()
 {
-  myMap.hideLayer(routeBrestroomURL);
+  myMap.hideLayer(routeBrestroomUrl);
 }
 
 
 function showVendorOnClickHandler()
 {
-  myMap.showLayer(routeBvendorURL);
+  myMap.showLayer(routeBvendorUrl);
 }
 
 function hideVendorOnClickHandler()
 {
-  myMap.hideLayer(routeBvendorURL);
+  myMap.hideLayer(routeBvendorUrl);
 }
 
 function showStreetOnClickHandler()
 {
-  myMap.showLayer(routeBstreetURL);
+  myMap.showLayer(routeBstreetUrl);
 }
 
 function hideStreetnClickHandler()
 {
-  myMap.hideLayer(routeBstreetURL);
+  myMap.hideLayer(routeBstreetUrl);
 }
   
 showRouteBtn.onclick = showRouteOnClickHandler;
