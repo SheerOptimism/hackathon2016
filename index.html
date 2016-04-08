@@ -1,0 +1,40 @@
+<!--     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+		//AIzaSyBNv4dVCnPrdLQvuKPAQ089RGyVJN5GxA4
+	</script> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSI Hackathon Prototype</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 20px;
+      }
+      #map {
+        height: 500px;
+		width: 80%;
+		float:left;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNv4dVCnPrdLQvuKPAQ089RGyVJN5GxA4"></script>
+			<script src="mapping-api.js"></script>
+	</head>
+  <body>
+  <h1>Conde Cavaliers</h1>
+    <div id="map"></div>
+	<div style="float:left">
+		Founded in 1977, the Conde Cavaliers open the downtown Mobile parading season. Members proudly point out that they held a ball and a parade in their first year.
+	</div>
+	<div>
+		<button id="showRouteBtn">Show Routes</button>
+		<br><br>
+		<button id="hideRouteBtn">Hide Routes</button>
+	</div>
+	<script src='example.js'></script>
+  </body>
+</html>
