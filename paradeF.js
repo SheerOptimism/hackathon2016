@@ -1,9 +1,9 @@
 myMap = createParadeMap("map");
 
 var routeFparadeUrl = "https://www.dropbox.com/s/70kc2jjspysqvez/RouteFParadeRoute.kml?dl=1";
-var routerestroomURL = "https://www.dropbox.com/s/7bbf0841lq5akox/RouteFRestrooms.kml?dl=1";
-var routevendorURL = "https://www.dropbox.com/s/dq0xokxtudtbxme/RouteFVendors.kml?dl=1";
-var routestreetURL = "https://www.dropbox.com/s/v1g8ffp9tutm9vl/RouteFStreetClosures.kml?dl=1";
+var routeFrestroomURL = "https://www.dropbox.com/s/7bbf0841lq5akox/RouteFRestrooms.kml?dl=1";
+var routeFvendorURL = "https://www.dropbox.com/s/dq0xokxtudtbxme/RouteFVendors.kml?dl=1";
+var routeFstreetURL = "https://www.dropbox.com/s/v1g8ffp9tutm9vl/RouteFStreetClosures.kml?dl=1";
 
 myMap.addLayer(routeFparadeUrl,true);
 myMap.addLayer(routeFrestroomURL,false);
