@@ -1,0 +1,175 @@
+<!--     <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+		//AIzaSyBNv4dVCnPrdLQvuKPAQ089RGyVJN5GxA4
+	</script> -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RSI Hackathon Prototype</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 20px;
+		 
+      }
+      #map {
+        height: 500px;
+		width: 80%;
+		float:left;
+		z-index: -1; 
+      }
+    </style>
+	
+	<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+	
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.show {display:block;}
+</style>
+	
+
+</div>
+	
+	
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNv4dVCnPrdLQvuKPAQ089RGyVJN5GxA4"></script>
+			<script src="mapping-api.js"></script>
+	</head>
+	
+	
+  <body>
+  <h1>Conde Cavaliers</h1>
+  <ul>
+  
+  
+  <li class="Parade Crews">
+    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Parade Crews</a>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="conde.html">Conde Cavaliers</a>
+      <a href="mystic.html">Mystic DJ Riders & Bayport Parading Society</a>
+      <a href="pharaohs.html">Pharaohs, Order of Hebe, Conde Explorers</a>
+	  <a href="mamga.html">MAMGA Mammoth Parade</a>
+	  <a href="orderpolka.html">Order of Polka Dots</a>
+	  <a href="orderinca.html">Order of Inca</a>
+	  <a href="mobile.html">Mobile Mystics, Mobile Mystical Revelers</a>
+	  <a href="maids.html">Maids of Mirth, Butterfly Maidens, Krewe of Marry Mates </a>
+	  <a href="neptunes.html">Neptune's Daughters, OOI</a>
+	  <a href="ordervenus.html">Order of Venus, Order of Many Faces</a>
+	  <a href="orderlashes.html">Order of LaShe's</a>
+	  <a href="mysticstripers.html">Mystic Stripers Society</a>
+	  <a href="crewe.html">Crewe of Columbus</a>
+	  <a href="floral.html">Floral Parade, Knights of Mobile, Mobile Mystical Ladies, Order of Angels </a>
+	  <a href="mystics.html">Mystics of Time</a>
+	  <a href="king.html">King Elexis I Motorcade</a>
+	  <a href="joe.html">Joe Cain Procession</a>
+	  <a href="krewe.html">Le Krewe de Bienville</a>
+	  <a href="felix.html">King Felix III, Floral parade</a>
+	  <a href="mlk.html">MLK Business and Civic Organization, MLK Monday Mystics, Northside Merchants</a>
+	  <a href="infant.html">Infant Mystics, Order of Doves</a>
+	  <a href="athena.html">Order of Athena</a>
+	  <a href="revelry.html">Knights of Revelry, King Felix III, Comic Cowboys</a>
+	  <a href="myths.html">Order of Myths</a>
+	  
+    </div>
+  </li>
+</ul>
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var d = 0; d < dropdowns.length; d++) {
+      var openDropdown = dropdowns[d];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+  
+  	
+ 
+  <br> <br> 
+    <div id="map"></div>
+	<div style="float:left">
+		Founded in 1977, the Conde Cavaliers open the downtown Mobile parading season. Members proudly point out that they held a ball and a parade in their first year.
+	</div>
+	<div> 
+	<button id= "showRouteBtn">Show Route </button> 
+	<br> <br> 
+	<button id= "hideRouteBtn">Hide Route </button> 
+	<br> <br> 
+	<button id= "showClosestRestroomBtn"> Show Restroom </button> 
+	 <br> <br> 
+	<button id= "hideClosestRestroomBtn"> Hide Restroom </button> 
+	<br> <br> 
+	<button id= "showFoodVendorBtn" > Show Food Vendors </button> 
+	 <br> <br> 
+	<button id= "hideFoodVendorBtn" > Hide Food Vendors </button> 
+	<br> <br> 
+	<button id= "showStreetBtn" > Show Street </button> 
+	<br> <br> 
+	<button id= "hideStreetBtn" > Hide Street </button> 
+	<br> <br> 
+</div> 
+	<script src='example.js'></script>
+  </body>
+</html>
