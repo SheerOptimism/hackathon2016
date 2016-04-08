@@ -6,6 +6,10 @@ myMap.addLayer(routeUrl,false);
 
 var showRouteBtn = document.getElementById("showRouteBtn");
 var hideRouteBtn = document.getElementById("hideRouteBtn");
+var showClosestRestroomBtn = document.getElementById ("showClosestRestroomBtn"); 
+var hideClosestRestroomBtn = document.getElementById ("hideClosestRestroomBtn"); 
+var showFoodVendorBtn = document.getElementById ("showFoodVendorBtn"); 
+var hideFoodVendorBtn = document.getElementById ("hideFoodVendorBtn"); 
 
 
 function showRouteOnClickHandler(){
@@ -18,4 +22,3 @@ function hideRouteOnClickHandler(){
 
 showRouteBtn.onclick = showRouteOnClickHandler;
 hideRouteBtn.addEventListener("click", hideRouteOnClickHandler)
-
